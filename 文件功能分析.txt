@@ -1,0 +1,6 @@
+留言板.js 入口文件
+配置router.js 配置路由文件(模块)
+handle.js 处理函数模块
+views 视图
+public 静态资源文件
+package.json 文件中scripts作用：自定义指令

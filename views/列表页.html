@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			li {
+				list-style: none;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="/abc/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/abc/main.css" />
+		<link rel="stylesheet" type="text/css" href="/abc/bootstrap/dist/css/bootstrap.min.css"/>
+	</head>
+
+	<body>
+		<!-- 列表页 -->
+		<h3>留言列表页</h3>
+		<a href="/publish">发布留言</a>
+		<ul>
+
+			{{each items}}
+			<li><span>{{$value.name}}说</span><span>{{$value.content}}</span></li>
+			{{/each}}
+		</ul>
+	</body>
+
+</html>
